@@ -610,6 +610,12 @@ template {
   z-index: 10;
 }
 
+.swiper-slide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .slider {
   width: 728px;
 }
