@@ -819,10 +819,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url("../img/newsletter-bg.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter::before {
@@ -904,6 +900,13 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+}
+
+.parallax-window {
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .reviews {
