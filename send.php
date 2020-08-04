@@ -28,12 +28,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'test'; // Логин на почте
-    $mail->Password   = 'test'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'tatjanatestmail@gmail.com'; // Логин на почте
+    $mail->Password   = '_vRtkG8QUX'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('test', 'test'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('tatjanatestmail@gmail.com', 'Tatjana TestMail'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('tkrivobokov@gmail.com');  
