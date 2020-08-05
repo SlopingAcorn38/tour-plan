@@ -7,6 +7,11 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+if( isset($_POST['email']){
+    $email = $_POST['email'];
+} else {
+    $email = 'tkrivobokova@gmail.com';
+}
 $message = $_POST['message'];
 
 // Формирование самого письма
@@ -36,7 +41,7 @@ try {
     $mail->setFrom('tatjanatestmail@gmail.com', 'Tatjana TestMail'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('tkrivobokova@gmail.com');  
+    $mail->addAddress($email);  
 
 
 // Отправка сообщения
