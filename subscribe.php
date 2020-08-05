@@ -4,6 +4,9 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
+// Переменные, которые отправляет пользователь
+$email = $_POST['email'];
+
 // Формирование самого письма
 $title = "Successfully subscribed";
 $body = "
