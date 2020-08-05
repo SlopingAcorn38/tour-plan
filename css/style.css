@@ -20,6 +20,7 @@ img {
 
 button {
   outline: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -969,6 +970,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .parallax-window {
