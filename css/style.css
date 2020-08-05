@@ -1382,6 +1382,54 @@ template {
           flex-direction: column;
 }
 
+.footer__information-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column: span 4;
+  justify-self: end;
+  margin-top: 82px;
+  width: 696px;
+}
+
+.footer__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 283px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__term {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.footer__payment {
+  margin: 0;
+  width: 136px;
+  height: 22px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
