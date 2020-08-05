@@ -248,6 +248,11 @@
 @media (max-width: 576px)
     .logo
         width: 99px
+    .navbar
+        &__search
+            &--mobile
+                &_visible
+                    width: 280px
     .hotel
         &__slider
             margin-bottom: 20px
@@ -267,6 +272,7 @@
         width: 100%
     .footer
         &-wrapper
+            max-width: 280px
             grid-template-columns: 1fr
         &__logo
             grid-row: 1
@@ -291,16 +297,22 @@
             &-form
                 grid-row: 7 / 10
                 grid-column: 1
+        &__form
+            max-width: 280px
         &__input
             max-width: 450px
         &__message
             max-width: 450px
+        &__info
+            grid-column: 1
         &__bottom
             grid-row: 11
             grid-column: 1
             flex-direction: column
         &__terms
             margin-bottom: 10px
+        &__term
+            margin-right: 10px
     .modal
         &__dialog
             min-width: 250px
