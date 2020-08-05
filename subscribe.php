@@ -49,4 +49,4 @@ try {
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: success.html');
