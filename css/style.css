@@ -1901,6 +1901,7 @@ template {
   }
   .modal__dialog {
     padding: 33px 20px;
+    min-width: 380px;
   }
   .modal__button {
     margin-bottom: 15px;
@@ -1998,6 +1999,9 @@ template {
   }
   .footer__terms {
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    min-width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
