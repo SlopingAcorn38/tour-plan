@@ -13,7 +13,7 @@
         width: 166px
         align-self: center
         grid-row: 1 / 3
-    &__categories
+    &__ gories
         grid-row: 1 / 4
     &__social
         &-links
@@ -104,29 +104,23 @@
         &-wrapper
             display: flex
             flex-direction: column
-    &__information
-        &-wrapper
-            display: flex
-            flex-direction: row
-            justify-content: space-between
-            grid-column: 2 / span 2
-            justify-self: end
-            margin-top: 82px
-            width: 696px
+    &__bottom
+        display: flex
+        justify-content: space-between
+        grid-column: 2 / span 3
+        margin-top: 95px
     &__terms
         display: flex
         flex-direction: row
-        justify-content: space-between
-        width: 283px
-        margin: 0
-        padding: 0
+        margin-left: 80px
     &__term
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 15px
         color: $light
-        list-style-type: none
+        text-decoration: none
+        margin-right: 15px
     &__payment
         margin: 0
         width: 136px
