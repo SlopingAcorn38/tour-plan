@@ -11,7 +11,7 @@ $email = $_POST['email'];
 $title = "Successfully subscribed";
 $body = "
     <h2>Thank you for subscribing</h2>
-    $email successfully subscribed for Best Tour Plan newsletter
+    $email was successfully subscribed for Best Tour Plan newsletter
     ";
 
 // Настройки PHPMailer

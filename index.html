@@ -300,6 +300,7 @@
         </h2>
         <form
           action="subscribe.php"
+          method="POST"
           class="subscribe newsletter__subscribe form"
         >
           <input
@@ -722,8 +723,8 @@ quest"
                 placeholder="Message"
                 name="message"
               ></textarea>
-                <button class="button footer__button">Send</button>
-                <span class="footer__info">* Required Fields</span>
+              <button class="button footer__button">Send</button>
+              <span class="footer__info">* Required Fields</span>
             </form>
             <!-- /.footer__form -->
           </div>
@@ -756,7 +757,7 @@ quest"
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" class="form modal__form">
+        <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
             class="input modal__input"
@@ -800,7 +801,7 @@ quest"
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title">Rate</h3>
-        <form action="send.php" class="modal__form form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
