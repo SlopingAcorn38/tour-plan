@@ -4,12 +4,8 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-// Переменные, которые отправляет пользователь
-$email = $_POST['email'];
-
-
 // Формирование самого письма
-$title = "New request from Best Tour Plan";
+$title = "Successfully subscribed";
 $body = "
     <h2>Thank you for subscribing</h2>
     $email successfully subscribed for Best Tour Plan newsletter
@@ -33,7 +29,7 @@ try {
     $mail->setFrom('tatjanatestmail@gmail.com', 'Tatjana TestMail'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress($email);  
+    $mail->addAddress('tkrivobokova@gmail.com');  
 
 
 // Отправка сообщения
