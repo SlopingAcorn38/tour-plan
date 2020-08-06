@@ -59,6 +59,11 @@ $(document).ready(function () {
       });
     }),
     $(".mask").mask("+7 (000) 000-00-00"),
-    AOS.init({ disable: "mobile" });
+    AOS.init({
+      disable: function () {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      },
+    });
 }),
   document.addEventListener("touchstart", onTouchStart, { passive: !0 });
