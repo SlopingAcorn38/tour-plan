@@ -14,9 +14,13 @@
         width: 230px
         height: 230px
     .footer
+        &-wrapper
+            max-width: 1110px
         &__contact
             &-form
                 max-width: 500px
+        &__form
+            max-width: 500px
         &__input
             &-group
                 flex-basis: 85%
@@ -24,6 +28,8 @@
             flex-basis: 85%
         &__info
             flex-basis: 35%
+        &__bottom
+            grid-row: 6
 @media screen and (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -75,8 +81,9 @@
         height: 250px
     .footer
         &-wrapper
-            grid-template-columns: repeat(6, 1fr)
-            grid-row-gap: 40px
+            grid-template-columns: repeat(5, 1fr)
+            grid-row-gap: 20px
+            max-width: 700px
         &__input
             &-group
                 flex-basis: 48%
@@ -94,7 +101,7 @@
                 align-self: center
         &__categories
             grid-row: 2 / 3
-            grid-column: span 2
+            grid-column: span 1
         &__legal
             grid-column: span 2
         &__additional
@@ -116,7 +123,7 @@
     body
         padding-top: 78px
     .container
-        max-width: 576px
+        max-width: 700px
         width: 92%
     .navbar
         &__user, &__search
@@ -223,8 +230,8 @@
                     margin-right: -65px
                     transform: translate(50%, 0)
         &__title
-            font-size: 30px
-            line-height: 38px
+            font-size: 18px
+            line-height: 23px
     .activities
         padding-top: 40px
         padding-bottom: 60px
@@ -232,15 +239,37 @@
         width: 49%
         height: 255px
     .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 5px
         &__input
             &-group
                 flex-basis: 100%
+        &__contact
+            &-details
+                grid-row: 5
+            &-form
+                grid-row: 7
         &__terms
             margin-left: 0
         &__input
             max-width: 500px
         &__message
             max-width: 500px
+        &__categories
+            grid-row: 3
+            grid-column: span 1
+            max-width: 162px
+        &__additional
+            grid-row: 3
+            grid-column: span 3
+            max-width: 200px
+        &__legal
+            grid-row: 3
+            grid-column: span 2
+            max-width: 190px
+        &__bottom
+            grid-row: 15
     .modal
         &__dialog
             padding: 33px 20px
@@ -278,29 +307,43 @@
         &-wrapper
             max-width: 280px
             grid-template-columns: 1fr
+            grid-gap: 30px
         &__logo
             grid-row: 1
             grid-column: 1
         &__social
             &-network
+                display: flex
+                flex-direction: column
                 grid-row: 2
                 grid-column: 1
+            &-links
+                margin-top: 22px
+                justify-content: flex-start
+        &__link
+            margin-right: 12px
+        &__title
+            min-width: 167px
         &__additional
             grid-row: 3
             grid-column: 1
+            width: 260px
         &__categories
             grid-row: 4
             grid-column: 1
+            width: 162px
         &__legal
             grid-row: 5
             grid-column: 1
+            width: 202px
         &__contact
+            max-width: 448px
             &-details
                 grid-row: 6
                 grid-column: 1
                 max-width: 500px
             &-form
-                grid-row: 7 / 10
+                grid-row: 7 / 11
                 grid-column: 1
         &__form
             max-width: 280px
@@ -311,7 +354,7 @@
         &__info
             grid-column: 1
         &__bottom
-            grid-row: 11
+            grid-row: 12
             grid-column: 1
             flex-direction: column
         &__terms
