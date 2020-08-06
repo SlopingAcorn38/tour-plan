@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  document.addEventListener("touchstart", onTouchStart, { passive: !0 });
   new Swiper(".hotel-slider", {
     loop: !0,
     navigation: {
