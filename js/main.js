@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  document.addEventListener("touchstart", onTouchStart, { passive: !0 });
   new Swiper(".hotel-slider", {
     loop: !0,
     navigation: {
@@ -62,3 +61,4 @@ $(document).ready(function () {
     $(".mask").mask("+7 (000) 000-00-00"),
     AOS.init();
 });
+document.addEventListener("touchstart", onTouchStart, { passive: !0 });
