@@ -13,8 +13,8 @@ $(document).ready(function () {
         nextEl: ".reviews-slider__button--next",
         prevEl: ".reviews-slider__button--prev",
       },
-    });
-  $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpeg" }),
+    }),
+    $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpeg" }),
     $(".menu-button").on("click", function () {
       $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     });
@@ -59,6 +59,6 @@ $(document).ready(function () {
       });
     }),
     $(".mask").mask("+7 (000) 000-00-00"),
-    AOS.init();
-});
-document.addEventListener("touchstart", onTouchStart, { passive: !0 });
+    AOS.init({ disable: "mobile" });
+}),
+  document.addEventListener("touchstart", onTouchStart, { passive: !0 });
