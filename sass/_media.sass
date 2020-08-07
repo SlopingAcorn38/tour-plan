@@ -319,6 +319,7 @@
         &__top
             padding: 28px 0
     .hotel
+
         padding-top: 0px
         padding-bottom: 0
         &__slider
@@ -350,6 +351,8 @@
         padding: 76px 0 83px 0
         height: 319px
         &-wrapper
+            margin-left: auto
+            margin-right: auto
             width: 280px
             flex-direction: column
             align-items: flex-start
@@ -392,21 +395,23 @@
     .card
         width: 280px
         height: 255px
+        margin-bottom: 23px
     .activities
+        padding-bottom: 37px
         &__title
             font-size: 18px
             line-height: 23px
             margin-bottom: 36px
-
     .footer
         &-wrapper
             max-width: 280px
             grid-template-columns: 1fr
             grid-gap: 30px
-        &__logo
+        &__logo, &__logo img
             grid-row: 1
             grid-column: 1
-
+            width: 104px
+            height: 120px
         &__social
             &-network
                 display: flex
@@ -421,15 +426,15 @@
         &__title
             min-width: 167px
         &__additional
-            grid-row: 3
-            grid-column: 1
-            width: 260px
-        &__categories
             grid-row: 4
+            grid-column: 1
+            min-width: 260px
+        &__categories
+            grid-row: 5
             grid-column: 1
             width: 162px
         &__legal
-            grid-row: 5
+            grid-row: 3
             grid-column: 1
             width: 202px
             margin-left: 0
@@ -448,20 +453,25 @@
             max-width: 450px
         &__message
             max-width: 450px
+            margin-bottom: 15px
+        &__send
+            flex-direction: column
+            align-items: start
         &__info
             grid-column: 1
+            margin-bottom: 15px
+        &__button
+            order: 1
         &__bottom
+            margin-top: -5px
             grid-row: 11
             grid-column: 1
             flex-direction: column
         &__terms
             margin-bottom: 10px
         &__term
-            margin-right: 10px
-    .logo
-        &__vertical
-            max-width: 104px
-            height: 120px
+            margin-right: 5px
+
     .modal
         &__dialog
             min-width: 250px
