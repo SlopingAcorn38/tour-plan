@@ -18,9 +18,9 @@
             max-width: 1110px
         &__contact
             &-form
-                max-width: 500px
+                max-width: 540px
         &__form
-            max-width: 500px
+            max-width: 540px
         &__input
             &-group
                 flex-basis: 85%
@@ -104,14 +104,17 @@
             grid-template-columns: repeat(5, 1fr)
             grid-row-gap: 47px
             max-width: 700px
+        &__logo, &__logo img
+            width: 104px
+            height: 120px
         &__input
             &-group
-                flex-basis: 49%
+                flex-basis: 47%
         &__message
             flex-basis: 100%
         &__info
             justify-content: end
-            flex-basis: 30%
+            flex-basis: 20%
         &__logo
             max-width: 104px
             height: 120px
@@ -132,7 +135,7 @@
             grid-column: span 2
         &__contact
             &-details
-                grid-column: span 5
+                grid-column: span 6
                 grid-row: 3
             &-form
                 grid-column: span 5
@@ -140,7 +143,10 @@
         &__bottom
             grid-column: span 5
             grid-row: 6
+            margin-top: 0px
             justify-content: space-between
+        &__terms
+            margin-left: 0
     .modal
         &__dialog
             padding: 33px 40px
@@ -235,11 +241,11 @@
     .newsletter
         &-wrapper
             margin: 0
-            margin-left: 10px
-            margin-right: 10px
-            max-width: 700px
+            margin-left: auto
+            margin-right: auto
+            min-width: 500px
             flex-direction: row
-            justify-content: space-between
+            justify-content: space-around
     .subscribe
         max-width: 280px
     .reviews
@@ -287,11 +293,11 @@
             max-width: 500px
         &__categories
             grid-row: 3
-            grid-column: span 1
+            grid-column: span 2
             max-width: 162px
         &__additional
             grid-row: 3
-            grid-column: span 3
+            grid-column: span 2
             max-width: 200px
         &__legal
             grid-row: 3
@@ -351,8 +357,6 @@
         padding: 76px 0 83px 0
         height: 319px
         &-wrapper
-            margin-left: auto
-            margin-right: auto
             width: 280px
             flex-direction: column
             align-items: flex-start
