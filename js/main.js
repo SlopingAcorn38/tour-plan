@@ -63,6 +63,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please type the phone",
+          minlength: "Name should be at least 9 symbols long",
         },
       },
     });
