@@ -246,7 +246,7 @@
             margin: 0
             margin-left: auto
             margin-right: auto
-            min-width: 500px
+            max-width: 500px
             flex-direction: row
             justify-content: space-around
     .subscribe
@@ -322,7 +322,9 @@
             margin-bottom: 15px
 @media screen and (max-width: 576px)
     .container
-
+        max-width: 280px
+        margin-left: auto
+        margin-right: auto
     .logo
         &__image
             width: 99px
@@ -439,6 +441,8 @@
             margin-right: 12px
         &__title
             min-width: 167px
+            &-send
+                margin-bottom: 15px
         &__additional
             grid-row: 4
             grid-column: 1
@@ -447,6 +451,7 @@
             grid-row: 5
             grid-column: 1
             width: 162px
+            margin-bottom: 15px
         &__legal
             grid-row: 3
             grid-column: 1
