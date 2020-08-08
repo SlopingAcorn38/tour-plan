@@ -307,22 +307,23 @@
             grid-column: 1
             width: 202px
             margin-left: 0
-        
         &__bottom
             grid-row: 9
     .modal
         &__dialog
-            padding: 33px 20px
+            padding: 40px 20px
             min-width: 380px
             max-height: 100vh
             min-height: 100%
+            margin-top: 0
             overflow-y: auto
             top: 200px
         &__button
             margin-bottom: 15px
 @media screen and (max-width: 576px)
     .container
-        width: 100%
+        margin-left: auto
+        margin-right: auto
     .logo
         &__image
             width: 99px
@@ -488,4 +489,9 @@
 
     .modal
         &__dialog
+            top: 50%
+            padding: 33px 20px
             min-width: 250px
+            margin-top: 75px
+            max-height: 100%
+
