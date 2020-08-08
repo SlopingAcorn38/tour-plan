@@ -152,6 +152,7 @@
     .modal
         &__dialog
             padding: 33px 40px
+            top: 35%
 @media screen and (max-width: 767px)
     body
         padding-top: 78px
@@ -249,6 +250,8 @@
             max-width: 500px
             flex-direction: row
             justify-content: space-around
+        &__title
+            margin-right: 20px
     .subscribe
         max-width: 280px
     .reviews
@@ -311,13 +314,13 @@
             grid-row: 9
     .modal
         &__dialog
-            padding: 40px 20px
+            padding: 20px 20px
             max-width: 500px
             max-height: 100vh
             min-height: 100%
             margin-top: 0
             overflow-y: auto
-            top: 200px
+            top: 40%
         &__button
             margin-bottom: 15px
 @media screen and (max-width: 576px)
@@ -375,6 +378,7 @@
         &__title
             width: 100%
             margin-bottom: 37px
+            margin-right: 0
         &-title
             font-size: 20px
             line-height: 25px
@@ -493,9 +497,14 @@
 
     .modal
         &__dialog
-            top: 50%
+            top: 30%
             padding: 33px 20px
             max-width: 250px
-            margin-top: 75px
             max-height: 100%
+            margin-top: 100px
+@media screen and ( max-height:  400px)
+    .modal
+        &__dialog
+            top: 32%
+            margin-top: 60px
 
