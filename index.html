@@ -707,24 +707,28 @@ quest"
             </h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  minlength="2"
-                  required
-                />
+                <div class="footer__input-wraper">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                </div>
               </div>
               <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input mask"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                  minlength="9"
-                />
+                <div class="footer__input-wraper">
+                  <input
+                    type="tel"
+                    class="input footer__input mask"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="9"
+                  />
+                </div>
               </div>
               <textarea
                 class="message footer__message"
