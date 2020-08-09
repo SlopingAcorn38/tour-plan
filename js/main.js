@@ -49,26 +49,27 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
-
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
+      errorElement: "label",
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "Name should be at least 2 symbols long",
+          minlength: "At least 2 symbols long",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Please type the email",
+          email: "Invalid format",
         },
         phone: {
           required: "Please type the phone",
-          minlength: "Name should be at least 9 symbols long",
+          minlength: "At least 17 symbols long",
         },
       },
     });
   });
+
   $(".mask").mask("+7 (000) 000-00-00");
   AOS.init();
   const map = document.querySelector(".map");
